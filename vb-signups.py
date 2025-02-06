@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import json
 import requests
 import time
@@ -70,8 +68,6 @@ def main():
     data = [refine_league(league) for league in new_data['data']['rows']]
 
     filtered_data = [league for league in data if league['day_of_week'] == DAY and league["play_level"] == PLAY_LEVEL]
-
-    print(filtered_data)
 
     old_data = load_previous_results()
 
