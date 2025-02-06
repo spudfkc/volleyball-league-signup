@@ -1,1 +1,4 @@
 requests
+loguru
+discord.py[voice]
+python-dotenv
